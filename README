@@ -2,17 +2,17 @@
 Branche principale
 main (ou master) : version de production
 
-dev : branche de développement centralisée
+work : branche de développement centralisée
 
 Règles
-Ne jamais push directement sur dev ❌.
+Ne jamais push directement sur work ❌.
 
 Chacun crée une branche avec son prénom :
 
 bash
 Copier
 Modifier
-git checkout -b kevin-feature-login
+git checkout -b richard-feature-login
 Commit régulièrement :
 
 bash
@@ -20,5 +20,5 @@ Copier
 Modifier
 git add .
 git commit -m "Ajout de la page de connexion"
-git push origin kevin-feature-login
-Crée un Pull Request vers dev pour validation.
+git push origin richard-feature-login
+Créer un Pull Request vers dev pour validation.
