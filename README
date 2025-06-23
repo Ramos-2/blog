@@ -5,7 +5,7 @@ main (ou master) : version de production
 work : branche de développement centralisée
 
 Règles
-Ne jamais push directement sur work ❌.
+Ne *jamais* push directement sur work ou main  ❌❌❌❌❌.
 
 Chacun crée une branche avec son prénom :
 
@@ -21,4 +21,4 @@ Modifier
 git add .
 git commit -m "Ajout de la page de connexion"
 git push origin richard-feature-login
-Créer un Pull Request vers dev pour validation.
+Créer un Pull Request vers work pour validation.
