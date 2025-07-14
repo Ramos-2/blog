@@ -1,0 +1,55 @@
+{
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
+    },
+    "routes": [{
+            "src": "/api/(.*)",
+            "dest": "/api/$1"
+        },
+        {
+            "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|ico|svg|webp))",
+            "dest": "/$1"
+        },
+        {
+            "src": "/admin/(.*)",
+            "dest": "/admin/$1"
+        },
+        {
+            "src": "/pages/(.*)",
+            "dest": "/pages/$1"
+        },
+        {
+            "src": "/Categories/(.*)",
+            "dest": "/Categories/$1"
+        },
+        {
+            "src": "/Articles/(.*)",
+            "dest": "/Articles/$1"
+        },
+        {
+            "src": "/actions/(.*)",
+            "dest": "/actions/$1"
+        },
+        {
+            "src": "/uploads/(.*)",
+            "dest": "/uploads/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/pages/index.php"
+        }
+    ],
+    "env": {
+        "DB_HOST": "@db-host",
+        "DB_NAME": "@db-name",
+        "DB_USER": "@db-user",
+        "DB_PASS": "@db-pass"
+    },
+    "build": {
+        "env": {
+            "PHP_VERSION": "8.1"
+        }
+    }
+}
